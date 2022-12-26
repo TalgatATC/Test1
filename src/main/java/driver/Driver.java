@@ -3,9 +3,6 @@ package driver;
 import dataProvider.ConfigReader;
 import org.openqa.selenium.WebDriver;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class Driver {
 
         private Driver() {

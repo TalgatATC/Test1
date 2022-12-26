@@ -4,13 +4,10 @@ import driver.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class Helper {
-
-
 
     public Helper waitElementToBeClickable(WebElement element) {
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10))
@@ -46,6 +43,11 @@ public class Helper {
         }
         return this;
     }
+//    public Helper listsPage(){
+//        List<String> pages = new LinkedList<>(driver.getWindowHandles());
+//        driver.switchTo().window(pages.get(1));
+//        return this;
+//    }
 
     public String getText(WebElement element) {
         return element.getText();
